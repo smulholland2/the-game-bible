@@ -1,0 +1,68 @@
+ul {
+    list-style: none;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+nav .top-cat {
+    padding: 10px;
+}
+
+nav .top-cat .sub-cats {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav .top-cat .sub-cats .sub-cat{
+    outline: 1px blue solid;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.content {
+    width:100%;
+    height: 650px;
+    border: thin solid black;
+}
+
+.toolbar {
+    display: inline-flex;
+    border-top: thin black solid;
+    border-right: thin black solid;
+    margin:3px 0px 0px;
+    width: 100%;
+}
+
+.toolbar .opt{
+    display: inline-flex;
+}
+
+.toolbar .opt > span, .toolbar .opt > select, .toolbar .opt > svg {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.toolbar .opt > span:hover, .toolbar .opt > select:hover, .toolbar .opt > svg:hover {
+    background-color:lightcyan;
+}
+
+.toolbar .opt > select {
+    border-top:none;
+    border-bottom:none;
+}
+
+.toolbar .opt-align {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <title>Game Bible</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top-cat">
+                <div><b>Plot</b></div>
+                <div class="sub-cats">
+
+                </div>
+            </div>
+            <div class="top-cat">
+                <div><b>Character</b></div>
+                <div class="sub-cats">
+
+                </div>
+            </div>
+            <div class="top-cat">
+                <div><b>Lore</b></div>
+                <div class="sub-cats">
+                    <div class="sub-cat">History</div>
+                    <div class="sub-cat">Weapons</div>
+                    <div class="sub-cat">Religion</div>
+                    <div class="sub-cat">Politics</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <button class="save">Save</button>
+    <section class="editor">
+        <div class="toolbar">
+            <div class="opt opt-text">
+                <select class="font-size">
+                    <option value="1">8px</option>
+                    <option value="2">10px</option>
+                    <option value="3" selected>12px</option>
+                    <option value="4">14px</option>
+                    <option value="5">18px</option>
+                    <option value="6">24px</option>
+                    <option value="7">36px</option>
+                </select>
+                <button class="bold"><b>B</b></button>
+                <button class="italic"><em>I</em></button>
+                <button class="underline"><u>U</u></button>
+                <button class="strike"><strike>S</strike></button>
+                <button class="subscript">X<sub>2</sub></button>
+                <button class="superscript">X<sup>2</sup></button>
+                <button class="code"><code><></code></button>
+            </div>
+            <div class="opt opt-align">
+                <button class="align-left">
+                    <svg width="24" height="24">
+                        <path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button class="align-center">
+                    <svg width="24" height="24">
+                        <path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button class="align-right">
+                    <svg width="24" height="24">
+                        <path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button class="align-just">
+                    <svg width="24" height="24">
+                        <path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="opt opt-paragraph">
+                <button class="indent-in">
+                    <svg width="24" height="24">
+                        <path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm1.6-3.8a1 1 0 01-1.2 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 011.2 1.6L6.8 12l1.8 1.2z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button class="indent-out">
+                    <svg width="24" height="24">
+                        <path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="content" id="content" contenteditable="true"></div>
+    </section>
+</body>
+<script src="js/main.js"></script>
+<script src="js/editor.js"></script>
+</html>
